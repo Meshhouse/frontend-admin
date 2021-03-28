@@ -1,0 +1,24 @@
+.dashboard
+  display: grid
+  height: 100vh
+  width: 100%
+  grid-template-columns: 400px 1.5fr
+  grid-template-rows: 1fr
+  grid-template-areas: "sidebar aside"
+  overflow: hidden
+  &__sidebar
+    grid-area: sidebar
+  &__aside
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr
+    grid-template-areas: "content"
+    grid-area: aside
+  &__content
+    grid-area: content
+    padding: 1rem
+    overflow-y: auto
+
+@import 'components/breadcrumbs'
+@import 'components/sidebar'
+@import 'components/statistics'

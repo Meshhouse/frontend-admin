@@ -1,0 +1,47 @@
+.dashboard
+  &__sidebar
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('/static/images/dashboard-sidebar.jpg') no-repeat left / cover
+    .sidebar
+      &__nav
+        height: calc(100vh - 80px)
+        padding: 1rem 2rem
+        overflow-y: auto
+      &__divider
+        text-transform: uppercase
+        color: #fff
+      &__navlink
+        color: #fff
+        justify-content: flex-start
+        background-color: rgba(255,255,255,0.1)
+        &:hover
+          background-color: rgba(255,255,255,0.3)
+    .brand
+      background-color: rgba(0,0,0,0.5)
+      display: flex
+      align-items: center
+      padding: 1rem 2rem
+      &__icon
+        display: block
+        width: 3rem
+        margin-right: 0.5rem
+      &__text
+        font-weight: 400
+        margin: -0.25rem 0 0
+        font-size: 3rem
+        text-transform: uppercase
+        line-height: 1
+        color: #fff
+    .user
+      margin-top: 0.5rem
+      padding: 1rem 2rem
+      display: flex
+      align-items: center
+      &__block
+        display: flex
+        align-items: center
+        color: #fff
+        margin-right: auto
+      &__avatar
+        margin-right: 0.5rem
+      &__title
+        font-size: 1.25rem
